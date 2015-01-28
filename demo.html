@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>SpeedTest Demo</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="text/javascript" src="js/speedTest.js"></script>
+    </head>
+    <body>
+        <h1>Your connection speed to server is approximately: <span></span> mb/s</h1><!-- Insert your content here -->
+        
+        <script type="text/javascript">        
+        // Event handler for end of speed test
+            speedTest.done = function () {
+            // Print it out
+                $('h1 span').html(speedTest.speed);
+            }
+
+        // starts the speed test
+            speedTest.init();
+        </script>
+    </body>
+</html>
