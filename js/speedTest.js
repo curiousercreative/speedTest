@@ -10,7 +10,7 @@ speedTest = {
         new Image(),
         new Image()
     ],
-    testImgPath: "graphics/speedtest/",
+    testImgPath: "graphics/speedTest/",
 // Public props
     speed: 0,
 // Private methods
